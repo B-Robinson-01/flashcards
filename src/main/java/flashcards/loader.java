@@ -2,15 +2,15 @@ package flashcards;
 
 import java.io.*;
 import com.google.gson.Gson;
+
 /** This class loads the provided Cards from a JSON file */
-public class loader {
-    public CardList loadCards() {
+public class Loader {
+    public CardList loadCards(String pathToJSON) {
         Gson gson = new Gson();
 
         // load a list of Cards 
         CardList cards = new CardList();
 
-        String pathToJSON = "/Cards.json";
         FileReader reader;
 
         try {

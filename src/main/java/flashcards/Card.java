@@ -23,5 +23,10 @@ public class Card {
     {
         return back;
     }
+
+    public String toString()
+    {
+        return "Front: " + front + " Back: " + back;
+    }
 }
 

@@ -1,0 +1,12 @@
+{
+    "list": [
+        {
+            "front": "Card1_front",
+            "back": "Card1_back"
+        },
+        {
+            "front": "Card2_front",
+            "back": "Card2_back"
+        }
+    ]
+}
