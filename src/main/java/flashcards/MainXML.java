@@ -6,8 +6,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-/** Necessary for loading Scene and pom.xml */
-public class Main extends Application {
+/** class responsible for loading .fxml scene and pom.xml */
+public class MainXML extends Application {
     public static void main(String[] args) {
         launch(args);
     }
@@ -18,7 +18,7 @@ public class Main extends Application {
         Parent root = loader.load();
         Scene scene = new Scene(root);
 
-        primaryStage.setTitle("FXML Example");
+        primaryStage.setTitle("Flashcards");
         primaryStage.setScene(scene);
         primaryStage.show();
     }
