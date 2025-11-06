@@ -44,7 +44,7 @@
         <artifactId>javafx-maven-plugin</artifactId>
         <version>0.0.8</version>
         <configuration>
-          <mainClass>flashcards.MainXML</mainClass>
+          <mainClass>flashcards.LoadXML</mainClass>
           <options>
             <option>--module-path</option>
             <option>/Users/BROB/Documents/Personal/javafx-sdk-24.0.1/lib</option>
