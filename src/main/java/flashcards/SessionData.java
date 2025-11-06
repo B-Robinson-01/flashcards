@@ -4,8 +4,6 @@ package flashcards;
 public class SessionData {
     public static CardList cards;
 
-
     // For front end management
     public static boolean isFrontShowing;
-    public static Card currCard;
 }

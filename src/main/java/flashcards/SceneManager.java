@@ -8,6 +8,7 @@ public class SceneManager {
     @FXML
     private Label CardText;
 
+    private int index;
     /** 
      * Flips Card to the other Side
      *    - if already showing Front: flip to back
@@ -17,11 +18,20 @@ public class SceneManager {
     {
         if (SessionData.isFrontShowing)
         {
-            ShowBack(SessionData.currCard);
+            ShowBack(getCurrCard());
         } else
         {
-            ShowFront(SessionData.currCard);
+            ShowFront(getCurrCard());
         }
+    }
+
+    /**
+     * Gets the current card from Session Data based on an index 
+     * @return current card 
+     */
+    private Card getCurrCard()
+    {
+        return SessionData.cards.list.get(index);
     }
 
     /** 
@@ -45,8 +55,26 @@ public class SceneManager {
     }
 
     // Next
+    public void NextCard()
+    {
+        if (index < SessionData.cards.size - 1)
+        {
+            index++;
+    
+            ShowFront(getCurrCard());
+        }
+    }
 
     // Prev
+    public void PrevCard()
+    {
+        if (index > 0)
+        {
+            index--;
+    
+            ShowFront(getCurrCard());
+        }
+    }
 
 
     // Shuffle???

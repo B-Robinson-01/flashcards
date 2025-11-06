@@ -23,12 +23,9 @@ public class LoadXML extends Application {
         primaryStage.setTitle("Flashcards");
         primaryStage.setScene(scene);
         primaryStage.show();
-
-        // Initialize first card
-        SessionData.currCard = SessionData.cards.list.get(0);
         
         SceneManager controller = loader.getController();
-        controller.ShowFront(SessionData.currCard);
+        controller.ShowFront(SessionData.cards.list.get(0));
     }
 
     private void JSONLoader() {

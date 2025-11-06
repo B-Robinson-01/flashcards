@@ -105,8 +105,8 @@
                </children>
             </StackPane>
             <Button fx:id="FlipButton" layoutX="302.0" layoutY="335.0" mnemonicParsing="false" onAction="#FlipCard" text="Flip" />
-            <Button fx:id="NextButton" layoutX="369.0" layoutY="335.0" mnemonicParsing="false" text="Next" />
-            <Button fx:id="PrevButton" layoutX="227.0" layoutY="335.0" mnemonicParsing="false" text="Prev" />
+            <Button fx:id="NextButton" layoutX="369.0" layoutY="335.0" mnemonicParsing="false" onAction="#NextCard" text="Next" />
+            <Button fx:id="PrevButton" layoutX="227.0" layoutY="335.0" mnemonicParsing="false" onAction="#PrevCard" text="Prev" />
       </children>
     </AnchorPane>
   </children>
