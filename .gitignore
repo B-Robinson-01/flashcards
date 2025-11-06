@@ -1,2 +1,5 @@
- # Ignore editor/IDE files
+# Ignore editor/IDE files
 .vscode/
+
+# Ignore generated target files
+.target/
