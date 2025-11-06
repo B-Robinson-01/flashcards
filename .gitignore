@@ -2,4 +2,4 @@
 .vscode/
 
 # Ignore generated target files
-.target/
+target/
