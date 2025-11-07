@@ -1,5 +1,8 @@
 package flashcards;
 
+import java.util.Collections;
+import java.util.*;
+
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,8 +12,6 @@ import javafx.stage.Stage;
 
 /** This class defines the many functions needed to manage the frontend */
 public class SceneManager {
-    // TODO: attach this to a button on main scene
-
     /**
      * This method declares what it means to create a new stage 
      *   that runs in addition to the stages already running
@@ -71,7 +72,7 @@ public class SceneManager {
      */
     private Card getCurrCard()
     {
-        return SessionData.cards.list.get(index);
+        return SessionData.cards.getList().get(index);
     }
 
     /** 
@@ -97,7 +98,7 @@ public class SceneManager {
     // Next
     public void NextCard()
     {
-        if (index < SessionData.cards.size - 1)
+        if (index < SessionData.cards.getSize() - 1)
         {
             index++;
     
@@ -118,4 +119,11 @@ public class SceneManager {
 
 
     // Shuffle???
+    public void ShuffleDeck()
+    {
+        List<Card> temp = SessionData.cards.getList();
+        Collections.shuffle(temp);
+
+        SessionData.cards.SetList(temp);
+    }
 }

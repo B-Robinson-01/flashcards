@@ -25,7 +25,7 @@ public class LoadXML extends Application {
         primaryStage.show();
         
         SceneManager controller = loader.getController();
-        controller.ShowFront(SessionData.cards.list.get(0));
+        controller.ShowFront(SessionData.cards.getList().get(0));
     }
 
     private void JSONLoader() {
